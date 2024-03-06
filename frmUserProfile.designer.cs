@@ -91,6 +91,7 @@ namespace DBPROJECT
             this.btnChangePwd.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnChangePwd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnChangePwd.UseVisualStyleBackColor = true;
+            this.btnChangePwd.Click += new System.EventHandler(this.btnChangePwd_Click);
             // 
             // label4
             // 
@@ -110,10 +111,7 @@ namespace DBPROJECT
             this.txtSMTPport.Name = "txtSMTPport";
             this.txtSMTPport.Size = new System.Drawing.Size(299, 22);
             this.txtSMTPport.TabIndex = 2;
-<<<<<<< HEAD
             this.txtSMTPport.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EnableSaveButton);
-=======
->>>>>>> 61b9701edb3e0e8535444841cfadc2ae5f55ca1a
             // 
             // label3
             // 
@@ -133,10 +131,7 @@ namespace DBPROJECT
             this.txtSMTPHOST.Name = "txtSMTPHOST";
             this.txtSMTPHOST.Size = new System.Drawing.Size(299, 22);
             this.txtSMTPHOST.TabIndex = 1;
-<<<<<<< HEAD
             this.txtSMTPHOST.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EnableSaveButton);
-=======
->>>>>>> 61b9701edb3e0e8535444841cfadc2ae5f55ca1a
             // 
             // cbxGender
             // 
@@ -183,10 +178,7 @@ namespace DBPROJECT
             this.pkrBirthdate.Size = new System.Drawing.Size(121, 22);
             this.pkrBirthdate.TabIndex = 3;
             this.pkrBirthdate.Value = new System.DateTime(2023, 3, 19, 0, 0, 0, 0);
-<<<<<<< HEAD
             this.pkrBirthdate.ValueChanged += new System.EventHandler(this.pkrBirthdate_ValueChanged);
-=======
->>>>>>> 61b9701edb3e0e8535444841cfadc2ae5f55ca1a
             // 
             // txtEmail
             // 
@@ -195,10 +187,7 @@ namespace DBPROJECT
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(299, 22);
             this.txtEmail.TabIndex = 0;
-<<<<<<< HEAD
             this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EnableSaveButton);
-=======
->>>>>>> 61b9701edb3e0e8535444841cfadc2ae5f55ca1a
             // 
             // txtLoginName
             // 
@@ -226,6 +215,7 @@ namespace DBPROJECT
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnSave
             // 
@@ -240,11 +230,8 @@ namespace DBPROJECT
             this.btnSave.Text = "Save";
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSave.UseVisualStyleBackColor = true;
-<<<<<<< HEAD
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             this.btnSave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EnableSaveButton);
-=======
->>>>>>> 61b9701edb3e0e8535444841cfadc2ae5f55ca1a
             // 
             // label2
             // 
@@ -271,15 +258,9 @@ namespace DBPROJECT
             // picBoxUser
             // 
             this.picBoxUser.Image = ((System.Drawing.Image)(resources.GetObject("picBoxUser.Image")));
-<<<<<<< HEAD
-            this.picBoxUser.Location = new System.Drawing.Point(76, 12);
-            this.picBoxUser.Name = "picBoxUser";
-            this.picBoxUser.Size = new System.Drawing.Size(278, 183);
-=======
             this.picBoxUser.Location = new System.Drawing.Point(82, 12);
             this.picBoxUser.Name = "picBoxUser";
             this.picBoxUser.Size = new System.Drawing.Size(265, 183);
->>>>>>> 61b9701edb3e0e8535444841cfadc2ae5f55ca1a
             this.picBoxUser.TabIndex = 25;
             this.picBoxUser.TabStop = false;
             // 
@@ -325,10 +306,7 @@ namespace DBPROJECT
             this.Controls.Add(this.btnLoadPhoto);
             this.Controls.Add(this.picBoxUser);
             this.Controls.Add(this.groupBox2);
-<<<<<<< HEAD
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-=======
->>>>>>> 61b9701edb3e0e8535444841cfadc2ae5f55ca1a
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmUserProfile";
             this.Text = "User Profile";

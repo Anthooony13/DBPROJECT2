@@ -23,8 +23,6 @@ namespace DBPROJECT
        
         private void btnExit_Click(object sender, EventArgs e)
         {
-            // if (MessageBox.Show("Exit the application?", "Please confirm",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
-            //         this.Close();
             if (csMessageBox.Show("Exit the application?", "Please confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
         }
@@ -73,21 +71,16 @@ namespace DBPROJECT
             ChangePasswordfrm.ShowDialog();
         }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 61b9701edb3e0e8535444841cfadc2ae5f55ca1a
         private frmUserProfile UserProfilefrm;
         private void editUserProfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             UserProfilefrm = new frmUserProfile(Globals.gIdUser, Globals.gLoginName);
             UserProfilefrm.FormClosed += UserProfilefrm_FormClosed;
-            UserProfilefrm.ShowDialog();
+            UserProfilefrm.Show();
         }
 
         private void UserProfilefrm_FormClosed(object sender, FormClosedEventArgs e)
         {
-
             UserProfilefrm.Dispose();
         }
 
