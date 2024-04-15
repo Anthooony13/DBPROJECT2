@@ -20,9 +20,11 @@ namespace DBPROJECT
 
 
         }
-       
+
         private void btnExit_Click(object sender, EventArgs e)
         {
+            // if (MessageBox.Show("Exit the application?", "Please confirm",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+            //         this.Close();
             if (csMessageBox.Show("Exit the application?", "Please confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
         }
@@ -55,7 +57,6 @@ namespace DBPROJECT
             this.glSetSizeToDesktop();
             this.BringToFront();
         }
-
         private void ChangePasswordfrm_FormClosed(object sender, FormClosedEventArgs e)
         {
             ChangePasswordfrm = null;
@@ -72,19 +73,22 @@ namespace DBPROJECT
         }
 
         private frmUserProfile UserProfilefrm;
+
         private void editUserProfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             UserProfilefrm = new frmUserProfile(Globals.gIdUser, Globals.gLoginName);
             UserProfilefrm.FormClosed += UserProfilefrm_FormClosed;
-            UserProfilefrm.Show();
+            UserProfilefrm.ShowDialog();
         }
 
         private void UserProfilefrm_FormClosed(object sender, FormClosedEventArgs e)
         {
+
             UserProfilefrm.Dispose();
         }
 
         frmUser Userfrm;
+
         private void usersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Userfrm = new frmUser();
@@ -92,6 +96,7 @@ namespace DBPROJECT
             Userfrm.MdiParent = this;
             Userfrm.Show();
         }
+
         private void Userfrm_FormClosed(object sender, EventArgs e)
         {
             Userfrm.Dispose();
